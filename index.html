@@ -22,7 +22,7 @@
     <!--<script src="scripts/libraries/jquery-1.11.1.min.js"></script>-->
     <!--<script src="scripts/global/appevents.js"></script>-->
     <script type="text/javascript">
-        window.gddAppInfo = 'appcode:2002|version:2.0.0'
+        window.gddAppInfo = 'appcode:2002|version:2.0.1'
 
 
 
@@ -76,6 +76,17 @@
         </div>
     </div>
 
+    <div data-role="popup" id="globalDidYouKnow" data-theme="a" data-dismissible="false" style="max-width: 400px; display: none">
+        <div data-role="header">
+            <h1>Hints and Tips</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p id="glbMsgDidYouKnow">
+            </p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="back">Okay, I got it</a>
+        </div>
+    </div>
+
 
     <div data-role="panel" class="ui-body-f" data-swipe-close="false"  id="appMenuPanel" data-position="right" data-display="reveal" style="display: none; background-color: #303030; height:100% ">
 
@@ -93,7 +104,7 @@
         <br/>
         <ul data-role="listview" data-count-theme="e" class="ui-mini" data-inset="true" data-theme="f">
             <li data-icon="user"><a href="#" id="btnAppMenuGoProfile">Profile</a></li>
-            <li data-icon="subscribe"><a href="#" id="btnAppMenuGoSubs">Manage Subsriptions</a></li>
+            <li data-icon="subscribe"><a href="#" id="btnAppMenuGoSubs">Manage Subscriptions</a></li>
             <li data-icon="calendar" class="eventsModule"><a href="#" id="btnAppMenuGoEvents">Events</a></li>
             <li data-icon="group" class="groupsModule" id="btnAppMenuGoGroups"><a href="#">Groups</a></li>
             <li data-icon="bullets" class="customListsModule"><a href="#" id="btnAppMenuGoLists">Lists</a></li>
